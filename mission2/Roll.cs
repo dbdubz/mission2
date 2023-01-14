@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace mission2
+﻿namespace mission2
 {
     class Roll
     {

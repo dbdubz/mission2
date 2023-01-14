@@ -8,11 +8,9 @@ namespace mission2
     {
         private static int Die()
         {
-            int[] sides = { 1, 2, 3, 4, 5, 6 };
-            List<int> options = new List<int>(sides);
             var rand = new Random();
 
-            int die = rand.Next(options.Count);
+            int die = rand.Next(1, 7);
 
             return die;
         }

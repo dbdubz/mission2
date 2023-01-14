@@ -41,11 +41,11 @@ namespace mission2
             while (cRoll < nRolls)
             {
 
-                // Creates a roll instance
+                // Creates 2 dice and a roll instance
                 Roll roll = new Roll();
 
                 // Calls the Total method
-                rollTotal = roll.Total();
+                rollTotal = roll.RollTotal;
                 rollVals[cRoll] = rollTotal;
                 cRoll += 1;
             }

@@ -2,22 +2,22 @@
 {
     class Roll
     {
-
-    // Defines what a roll is
-    // Creates an instace of 2 dice (a and b), adds them together and return the roll total
-        public int Total()
+        // Defines what a roll is
+        // Creates an instace of 2 dice (a and b), adds them together and return the roll total
+        public int RollTotal
         {
-            int roll;
+            get
+            {
+                // Instance of die A
+                Die dieA = new Die();
 
-        // Instance of die A
-            Die dieA = new Die();
+                // Instance of die B
+                Die dieB = new Die();
 
-        // Instance of die B
-            Die dieB = new Die();
-
-        // Calculate roll value and return
-            roll = dieA.GetVal() + dieB.GetVal();
-            return roll;
+                // Calculate roll value and return
+                int roll = dieA.Val + dieB.Val;
+                return roll;
+            }
         }
     }
 }

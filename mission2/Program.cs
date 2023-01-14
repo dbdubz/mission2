@@ -25,7 +25,7 @@ namespace mission2
 
             Console.WriteLine("Welcome to the dice throwing simulator!\n");
             Console.Write("How many dice rolls would you like to simulate? ");
-            nRolls = Convert.ToInt32(Console.ReadLine());
+            nRolls = (int)Convert.ToInt64(Console.ReadLine());
 
             while (cRoll < nRolls)
             {

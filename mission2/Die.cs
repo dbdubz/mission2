@@ -4,7 +4,6 @@ namespace mission2
 {
     class Die
     {
-
         // Elements of an individual Die
         public int Val
         {

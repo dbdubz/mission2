@@ -29,6 +29,7 @@ namespace mission2
             int possible = 2;
             Dictionary<int, string> outcomes = new Dictionary<int, string>();
 
+            // Set up the dictionary for printing with the proper key values
             while (possible < 13)
             {
                 outcomes.Add(possible, "");
@@ -72,7 +73,6 @@ namespace mission2
 
             return outcomes;
         }
-
         public static void End(int nRolls, Dictionary<int, string> outcomes)
         {
             // Print Results header

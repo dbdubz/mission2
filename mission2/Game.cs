@@ -38,7 +38,7 @@ namespace mission2
 
             int[] rollVals = new int[nRolls];
 
-            // Perform the rolls
+            // Perform the rolls, store them in an array
             while (cRoll < nRolls)
             {
 
@@ -52,7 +52,8 @@ namespace mission2
             }
 
             possible = 2;
-            
+
+            // Convert rolls to * process (array => dictionary)
             while (possible < 13)
             {
                 val = rollVals.Count(r => r == possible);
@@ -61,7 +62,7 @@ namespace mission2
                 percentage = (int)Math.Round(((val / (decimal)nRolls) * 100), 0);
                 n = 0;
 
-                // Convert the percentages to *
+                // Convert the percentages to *, store them in a dictionary to print
                 while (n < percentage)
                 {
                     outcomes[possible] += "*";
